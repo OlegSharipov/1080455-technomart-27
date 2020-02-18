@@ -10,20 +10,39 @@
   <header class="main header">
     <div class="up-block">
       <a class="main-header-logo">
-        <img src="img/index-logo.svg" width="100" height="100" alt="логотип Техномарт">
+        <img src="img/index-logo.png" width="220" height="47" alt="логотип Техномарт">
       </a>
-      <input type="text">
+      <div class="icons-header">
+        <img src="img/icon-search.png" width="17" height="17" alt="иконка поиск">
+        <input type="text">
+      </div>
       <!--Форма для поиска-->
-      <span class="bookmarks"><a href="#">Закладки</a></span>
-      <span class="bookmarks"><a href="#">Корзина</a></span>
-      <span class="bookmarks"><a href="#">Оформить заказ</a></span>
+      <div class="icons-header">
+        <img src="img/icon-bookmark.png" width="14" height="16" alt="иконка закладка">
+        <span class="bookmarks"><a href="#">Закладки</a></span>
+      </div>
+      <div class="icons-header">
+        <img src="img/cart-icon.png" width="15" height="15" alt="иконка корзина">
+        <span class="basket"><a href="#">Корзина</a></span>
+      </div>
+      <div class="icons-header">
+        <span class="bookmarks"><a href="#">Оформить заказ</a></span>
+      </div>
     </div>
     <div>
       <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <div class="block-contacts">
+        <img src="img/icon-phone.png" width="19" height="19" alt="иконка телефон">
         <p>+7 (812) 555-05-55</p>
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
+      <section class="modal-modal-login">
+        <img src="img/icon-login.png" width="20" height="17" alt="иконка вход">
+        <span>Личный кабинет</span>
+        <span>Ведите логин и пароль.</span>
+        <!--Здесь будет форма-->
+        <span class="modal-close">x</span>
+      </section>
       <nav class="main header">
         <ul class="site-navigation">
           <!--Список меню навигации-->
@@ -39,52 +58,53 @@
     </div>
   </header>
   <main class="container">
-
     <section class="services-points">
       <h2 class="visually-hidden">Услуги техномарта</h2>
       <div class="materials">
         <p>Материалы</p>
         <a class="button777" href="#.html">На любой вкус</a>
-        <img src="bucket.svg" width="50" height="50" alt="иконка ведерко">
+        <img src="img/bucket.png" width="44" height="65" alt="иконка ведерко">
+        <img src="img/newflag.png" width="60" height="59" alt="новинка">
         <p>new</p>
       </div>
       <div class="tool">
         <p>Инструмент</p>
         <a class="button777" href="#.html">На все случаи жизни</a>
-        <img src="drill.svg" width="50" height="50" alt="иконка дрель">
+        <img src="img/drill.png" width="60" height="59" alt="иконка дрель">
       </div>
       <div class="technic">
         <p>Техника</p>
         <a class="button777" href="#.html">Для стройки</a>
-        <img src="tractor.svg" width="50" height="50" alt="иконка трактор">
+        <img src="img/tractor.png" width="78" height="62" alt="иконка трактор">
       </div>
       <div class="discount">
         <p>Скидки 50%</p>
         <a class="button777" href="#.html">На 350 товаров</a>
-        <img src="discount-basket.svg" width="50" height="50" alt="иконка корзины">
+        <img src="img/discount-basket.png" width="59" height="72" alt="иконка корзины">
       </div>
       <div class="delivery">
         <p>Доставка</p>
         <a class="button777" href="#.html">Бесплатно</a>
-        <img src="discount-basket.svg" width="50" height="50" alt="иконка грузовик">
+        <img src="img/truck.png" width="78" height="63" alt="иконка грузовик">
       </div>
       <div class="drill-men">
-        <p>Дрели</p>
-        <p>Соседям на радость</p>
         <a class="button888" href="#.html">Открыть каталог</a>
         <figure>
-          <img src="drill-men.jpg" width="50" height="50" alt="мужик дрелит">
+          <h2>Дрели</h2>
+          <p>Соседям на радость</p>
+          <img src="img/drill-men.jpg" width="620" height="266" alt="мужик дрелит">
         </figure>
         <figure>
-          <img src="drill-men2.jpg" width="50" height="50" alt="мужик дрелит">
+          <h2>Перфораторы</h2>
+          <p>Настоящие мужские игрушки</p>
+          <img src="img/drill-men2.jpg" width="620" height="266" alt="мужик дрелит">
         </figure>
-        <span class="gallery-button-back">Тут указать иконку переключения назад-не умею</span>
-        <span class="gallery-button-next">Тут указать иконку переключения вперед-не умею</span>
-        <img src="circle1" width="50" height="50" alt="активная картинка">
-        <img src="circle2" width="50" height="50" alt="активная картинка">
+        <span class="gallery-button-back"><img src="img/icon-left.png" width="22" height="40" alt="влево"></span>
+        <span class="gallery-button-next"><img src="img/icon-right.png" width="22" height="40" alt="вправо"></span>
+        <img src="img/slider-dots.png" width="10" height="10" alt="активная картинка">
+        <img src="img/slider-dots.png" width="10" height="10" alt="активная картинка">
       </div>
     </section>
-
     <section class="popular-product">
       <h2 class="visually-hidden">Популярные продукты</h2>
       <div class="pop-product">
@@ -93,31 +113,31 @@
       </div>
       <div class="4perforators">
         <div class="catalog-item BOSCH BFG 9000">
-          <a href="#"><img src="#" alt="картинка перфоратора"></a>
+          <a href="#"><img src="img/bosch9000.png" width="218" height="170" alt="картинка перфоратора"></a>
           <h2>Перфоратор BOSCH BFG 9000</h2>
           <p>25500 Р.</p>
           <span>32500 Р.</span>
         </div>
         <div class="catalog-item BOSCH BFG 3000">
-          <a href="#"><img src="#" alt="картинка перфоратора"></a>
+          <a href="#"><img src="img/bosch3000.png" width="218" height="170" alt="картинка перфоратора"></a>
           <h2>Перфоратор BOSCH BFG 3000</h2>
           <p>15500 Р.</p>
           <span>22500 Р.</span>
         </div>
         <div class="catalog-item BOSCH BFG 6000">
-          <a href="#"><img src="#" alt="картинка перфоратора"></a>
+          <a href="#"><img src="img/bosch6000.png" width="218" height="170" alt="картинка перфоратора"></a>
           <h2>Перфоратор BOSCH BFG 6000</h2>
           <p>25500 Р.</p>
           <span>30500 Р.</span>
         </div>
         <div class="catalog-item BOSCH BFG 2000">
-          <a href="#"><img src="#" alt="картинка перфоратора"></a>
+          <img src="img/newflag.png" width="60" height="59" alt="новинка">
+          <a href="#"><img src="img/bosch2000.png" width="218" height="170" alt="картинка перфоратора"></a>
           <h2>Перфоратор BOSCH BFG 2000</h2>
           <p>12500 Р.</p>
         </div>
       </div>
     </section>
-
     <section class="popular-manufactures">
       <h2 class="visually-hidden">Популярные производители</h2>
       <div class="manufacturer-block">
@@ -125,14 +145,14 @@
         <a class="button999" href="#.html">Все производители</a>
       </div>
       <ul class="logos-manufacturers">
-        <li><img src="BOSCH.svg" width="50" height="50" alt="BOSCH"></li>
-        <li><img src="makita.svg" width="50" height="50" alt="makita"></li>
-        <li><img src="dewalt.svg" width="50" height="50" alt="dewalt"></li>
-        <li><img src="interscol.svg" width="50" height="50" alt="interscol"></li>
-        <li><img src="hitachi.svg" width="50" height="50" alt="hitachi"></li>
-        <li><img src="lg.svg" width="50" height="50" alt="lg"></li>
-        <li><img src="aeg.svg" width="50" height="50" alt="aeg"></li>
-        <li><img src="metabo.svg" width="50" height="50" alt="metabo"></li>
+        <li><img src="img/BOSCH.png" width="126" height="37" alt="BOSCH лого"></li>
+        <li><img src="img/makita.png" width="123" height="40" alt="makita лого"></li>
+        <li><img src="img/dewalt.png" width="146" height="44" alt="dewalt лого"></li>
+        <li><img src="img/interscol.png" width="200" height="88" alt="interscol лого"></li>
+        <li><img src="img/hitachi.png" width="169" height="31" alt="hitachi лого"></li>
+        <li><img src="img/lg.png" width="121" height="73" alt="lg лого"></li>
+        <li><img src="img/aeg.png" width="151" height="96" alt="aeg лого"></li>
+        <li><img src="img/metabo.png" width="204" height="69" alt="metabo лого"></li>
       </ul>
     </section>
     <section class="services">
@@ -153,25 +173,25 @@
           к вашему подъезду совершенно бесплатно!
           Ведь мы неплохо заработаем,
           поднимая его на ваш этаж!</p>
-          <img src="truck" alt="грузовик">
+        <img src="img/truck-big.png" width="468" height="261" alt="рисунок грузовик">
       </div>
       <div class="guarantee">
         <p>Гарантия</p>
-        <p>Если купленный у нас товар поломается или заискрит, 
-          а также в случае пожара, спровоцированного его возгоранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+        <p>Если купленный у нас товар поломается или заискрит,
+          а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы
+          обменяем сгоревший товар на новый.
           Дом уж восстановите как-нибудь сами.</p>
-          <img src="medal" alt="награда">
+        <img src="img/medal.png" width="389" height="283" alt="награда рисунок">
       </div>
       <div class="credit">
         <p>Гарантия</p>
-        <p>Залезть в долговую яму стало проще! 
+        <p>Залезть в долговую яму стало проще!
           Кредитные консультанты придут вам на помощь.</p>
-          <a href="#.html">Отправить заявку</a>
-          <img src="medal" alt="награда">
+        <a href="#.html">Отправить заявку</a>
+        <img src="img/credit.png" width="465" height="285" alt="кредит рисунок">
       </div>
-      
-
-    </section>
+      <img src="img/shadow.png" width="10" height="279" alt="тень рисунок">
+     </section>
     <section class="company tehnomart">
       <h2>КОМПАНИЯ «Техномарт»</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -197,14 +217,14 @@
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, <br>
         заехав в наш офис:</p>
-      <a href="#"><img src="img/map.jpg" width="100" height="100" alt="карта"></a>
+      <a href="#"><img src="img/mini-map.png" width="300" height="158" alt="карта"></a>
       <a class="button" href="#.html">Заблудились? Напишите нам!</a>
     </section>
   </main>
   <footer class="main-footer">
     <div class="footer-up-block">
       <div class="bottom menu">
-        <a class="main-header-logo"> <img src="img/index-logo.svg" width="100" height="100" alt="логотип Техномарт"></a>
+        <a class="main-header-logo"> <img src="img/index-logo.png" width="220" height="68" alt="логотип Техномарт"></a>
         <ul class="site-navigation">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -234,6 +254,9 @@
           <li><a class="social-button" href="#">Инстаграмм</a></li>
           <li><a class="social-button" href="#">Фейсбук</a></li>
         </ul>
+        <img src="img/vk-icon.png" width="26" height="15" alt="логотип ВК">
+        <img src="img/fb-icon.png" width="12" height="22" alt="логотип Фейсбук">
+        <img src="img/insta-icon.png" width="21" height="21" alt="логотип Инстаграм">
       </div>
       <div>
         <p>Обратная связь:<br>
