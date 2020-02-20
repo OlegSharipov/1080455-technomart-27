@@ -37,11 +37,13 @@
         <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <section class="modal-modal-login">
+        <h2 class="visually-hadden">Форма входа</h2>
         <img src="img/icon-login.png" width="20" height="17" alt="иконка вход">
-        <span>Личный кабинет</span>
-        <span>Ведите логин и пароль.</span>
         <!--Здесь будет форма-->
-        <span class="modal-close">x</span>
+        <ul class="user-navigation">
+          <li><a class="my-order" href="#">Мои заказы</a></li>
+          <li><a class="personal account" href="#">Личный кабинет</a></li>
+        </ul>
       </section>
       <nav class="main header">
         <ul class="site-navigation">
@@ -65,26 +67,48 @@
     </ul>
     <h2>Перфораторы</h2>
     <section class="filters">
-      <form>
-        <div class="manufacturers">
-          <h3>Производители</h3>
+      <h2 class="visually-hadden">Фильтр товаров</h2>
+      <form class="filters" method="get" action="#">
+        <fieldset>
+          <legend>Производители</legend>
           <ul class="all-manufacturers">
-            <li><span>BOSCH</span></li>
-            <li><span>ИНТЕРСКОЛ</span></li>
-            <li><span>MAKIta</span></li>
-            <li><span>Dewalt></span></li>
-            <li><span>Hitachi</span></li>
+            <li class="filter-option">
+              <input class="visually-hadden filter-input filter-input-checkbox" type="checkbox" name="BOSCH"
+                id="filter-BOSCH" checked>
+              <label for="filter-BOSCH">BOSCH</label></li>
+            <li class="filter-option">
+              <input class="visually-hadden filter-input filter-input-checkbox" type="checkbox" name="interskol"
+                id="filter-interskol">
+              <label for="filter-interskol">ИНТЕРСКОЛ</label></li>
+            <li class="filter-option">
+              <input class="visually-hadden filter-input filter-input-checkbox" type="checkbox" name="makita"
+                id="filter-makita" checked>
+              <label for="filter-makita">MAKIta</label></li>
+            <li class="filter-option">
+              <input class="visually-hadden filter-input filter-input-checkbox" type="checkbox" name="dewalt"
+                id="filter-dewalt">
+              <label for="filter-dewalt">Dewalt></label></li>
+            <li class="filter-option">
+              <input class="visually-hadden filter-input filter-input-checkbox" type="checkbox" name="hitachi"
+                id="filter-hitachi">
+              <label for="filter-hitachi">Hitachi</label></li>
           </ul>
-        </div>
-        <div class="batteries">
-          <h3>Питание</h3>
+        </fieldset>
+        <fieldset>
+          <legend>Питание</legend>
           <ul>
-            <li><span>Аккумуляторные</span></li>
-            <li><span>Сетевые</span></li>
+            <li class="filter-option">
+              <input class="visually-hadden filter-input filter-input-radio" type="radio" name="product-group"
+                value="battery" id="filter-battery" checked>
+              <label for="filter-battery">Аккумуляторные</label></li>
+            <li class="filter-option">
+              <input class="visually-hadden filter-input filter-input-radio" type="radio" name="product-group"
+                value="networking" id="filter-networking">
+              <label for="filter-networking">Аккумуляторные</label></li>
           </ul>
-        </div>
+        </fieldset>
       </form>
-      <span class="button show">Показать</span>
+      <button type="submit" class="filter-button button">Показать</button>
     </section>
     <section class="sort">
       <h3 class="visually-hidden">Сортировать</h3>
@@ -183,6 +207,16 @@
         В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная
         дрель.</p>
     </section>
+    <section class="modal product to cart">
+      <h2 class="visually-hidden">Продукт в карзине</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <p>
+          <img src="img/icon-ok.png" width="66" height="66"
+              alt="Картинка ок">
+      </p>
+      <button class="place-order" type="button">Оформит заказ</button>
+      <button class="continue shopping" type="button">Продолжить покупки</button>
+  </section>
   </main>
   <footer class="main-footer">
     <div class="footer-up-block">

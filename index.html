@@ -38,9 +38,11 @@
       </div>
       <section class="modal-modal-login">
         <img src="img/icon-login.png" width="20" height="17" alt="иконка вход">
-        <span>Личный кабинет</span>
-        <span>Ведите логин и пароль.</span>
         <!--Здесь будет форма-->
+        <ul class="user-navigation">
+          <li><a class="login-link" href="#">вход</a></li>
+          <li><a class="login-regisration" href="#">Регистрация</a></li>
+        </ul>
         <span class="modal-close">x</span>
       </section>
       <nav class="main header">
@@ -92,8 +94,11 @@
         <figure>
           <h2>Дрели</h2>
           <p>Соседям на радость</p>
-          <img src="img/drill-men.jpg" width="620" height="266" alt="мужик дрелит">
+          <a href="#"><img src="img/drill-men.jpg" width="620" height="266" alt="мужик дрелит"></a>
         </figure>
+        <button class="button gallery-button gallery-button-back">Назад</button>
+        <button class="button gallery-button gallery-button-next">Вперед</button>
+
         <figure>
           <h2>Перфораторы</h2>
           <p>Настоящие мужские игрушки</p>
@@ -191,7 +196,7 @@
         <img src="img/credit.png" width="465" height="285" alt="кредит рисунок">
       </div>
       <img src="img/shadow.png" width="10" height="279" alt="тень рисунок">
-     </section>
+    </section>
     <section class="company tehnomart">
       <h2>КОМПАНИЯ «Техномарт»</h2>
       <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
@@ -219,6 +224,36 @@
         заехав в наш офис:</p>
       <a href="#"><img src="img/mini-map.png" width="300" height="158" alt="карта"></a>
       <a class="button" href="#.html">Заблудились? Напишите нам!</a>
+      <!--форма для связи-->
+      <section class="">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="appointment-form" action="#" method="post">
+          <p class="appointment-item">
+            <label for="appointment-name">
+              Ваше имя
+            </label>
+            <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия"></p>
+          <p class="appointment-item">
+            <label for="appointment-mail">
+              Ваш e-mail:
+            </label>
+            <input id="appointment-mail" type="text" name="name" value="" placeholder="email@example.com"></p>
+          <p class="appointment-item">
+            <label for="appointment-text">
+              Текст письма:
+            </label>
+            <input id="appointment-text" type="text" name="name" value="" placeholder="В свободной форме"></p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <button class="modal-close" type="button">Закрыть</button>
+      <p>
+        <img src="img/map.jpg" width="970" height="476" alt="Офис компании по адресу улица Ленина 25">
+      </p>
     </section>
   </main>
   <footer class="main-footer">
